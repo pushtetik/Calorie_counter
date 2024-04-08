@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment1">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_round"
+            android:layout_margin="15dp"
+            android:elevation="6dp"
+            android:translationZ="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Главное меню"
+                android:textAlignment="center"
+                android:textColor="@color/dark_green"
+                android:textSize="25sp"
+                android:layout_marginHorizontal="50dp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/date_textview"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Сб, 06.04.24"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginHorizontal="50dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/round_button_grey"
+            android:elevation="6dp"
+            android:translationZ="10dp"
+            android:clipToOutline="true">
+
+            <TextView
+                android:id="@+id/CaloriesCount"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:textAlignment="center"
+                android:text="1213 Ккал"
+                android:textColor="@color/dark_green"
+                android:textSize="28sp"
+                android:textStyle="bold|italic"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="false"
+                android:scrollHorizontally="true"
+                />
+
+            <TextView
+                android:id="@+id/CaloriesCountTextView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="за сегодня"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="italic"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+        <!-- RecyclerView занимает все доступное пространство между верхней частью экрана и панелью навигации -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="15dp"
+            android:layout_marginTop="80dp" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
