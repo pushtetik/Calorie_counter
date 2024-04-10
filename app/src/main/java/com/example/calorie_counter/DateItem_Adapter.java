@@ -41,11 +41,11 @@ public class DateItem_Adapter extends RecyclerView.Adapter<DateItem_Adapter.Item
                     false
             );
 
-            List<itemfrag1> subItemList = item.getSubItemList();
+            List<itemfrag2> subItemList = item.getSubItemList();
             if (subItemList != null) {
                 layoutManager.setInitialPrefetchItemCount(subItemList.size());
 
-                itemAdapter_frag1 subItemAdapter = new itemAdapter_frag1(itemViewHolder.itemView.getContext(), subItemList);
+                itemAdapter_frag2 subItemAdapter = new itemAdapter_frag2(itemViewHolder.itemView.getContext(), subItemList);
 
 
                 itemViewHolder.rvSubItem.setLayoutManager(layoutManager);

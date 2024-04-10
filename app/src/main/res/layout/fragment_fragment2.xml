@@ -55,7 +55,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
+                android:layout_weight="0.3"
                 android:fontFamily="sans-serif-light"
                 android:paddingLeft="8dp"
                 android:text="Название продукта"
@@ -67,7 +67,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.6"
+                android:layout_weight="0.2"
+                android:textAlignment="center"
                 android:fontFamily="sans-serif-light"
                 android:text="Кол-во"
                 android:textColor="@color/black"
@@ -80,21 +81,11 @@
                 android:layout_weight="0.8"
                 android:fontFamily="sans-serif-light"
                 android:text="Ккал"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="10sp"
                 android:textStyle="italic" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:fontFamily="sans-serif-light"
-                android:paddingLeft="8dp"
-                android:text="Удалить"
-                android:textColor="@color/black"
-                android:textSize="10sp"
-                android:textStyle="italic"
-                android:paddingRight="8dp"/>
 
         </LinearLayout>
 

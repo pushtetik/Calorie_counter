@@ -4,9 +4,9 @@ import java.util.List;
 
 public class DateItem {
     private String itemDate;
-    private List<itemfrag1> subItemList;
+    private List<itemfrag2> subItemList;
 
-    public DateItem(String itemDate, List<itemfrag1> subItemList) {
+    public DateItem(String itemDate, List<itemfrag2> subItemList) {
         this.itemDate = itemDate;
         this.subItemList = subItemList;
     }
@@ -19,11 +19,11 @@ public class DateItem {
         this.itemDate = itemDate;
     }
 
-    public List<itemfrag1> getSubItemList() {
+    public List<itemfrag2> getSubItemList() {
         return subItemList;
     }
 
-    public void setSubItemList(List<itemfrag1> subItemList) {
+    public void setSubItemList(List<itemfrag2> subItemList) {
         this.subItemList = subItemList;
     }
 }

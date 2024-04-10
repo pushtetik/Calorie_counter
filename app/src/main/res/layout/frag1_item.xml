@@ -52,7 +52,7 @@
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:maxHeight="30dp"
-            android:text="0"
+            android:text="90"
             android:layout_marginVertical="20dp"
             android:layout_toEndOf="@+id/Count"
             android:textAlignment="center"
@@ -74,10 +74,11 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/DelButtom"
             android:layout_toEndOf="@+id/text"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginRight="2dp"
-            android:layout_marginVertical="10dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/del"
             tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </RelativeLayout>

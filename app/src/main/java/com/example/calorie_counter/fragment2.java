@@ -90,13 +90,13 @@ public class fragment2 extends Fragment {
         return itemList;
     }
 //Функция для заполнения калорий:
-    private List<itemfrag1> buildSubItemList() {
-        List<itemfrag1> subItemList = new ArrayList<>();
-        subItemList.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        subItemList.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        subItemList.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        subItemList.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        subItemList.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
+    private List<itemfrag2> buildSubItemList() {
+        List<itemfrag2> subItemList = new ArrayList<>();
+        subItemList.add(new itemfrag2("Задача 1", "34 г", "90",R.drawable.icon1));
+        subItemList.add(new itemfrag2("Задача 1", "34 г", "90",R.drawable.icon1));
+        subItemList.add(new itemfrag2("Задача 1", "34 г", "90",R.drawable.icon1));
+        subItemList.add(new itemfrag2("Задача 1", "34 г", "90",R.drawable.icon1));
+        subItemList.add(new itemfrag2("Задача 1", "34 г", "90",R.drawable.icon1));
 
         return subItemList;
     }

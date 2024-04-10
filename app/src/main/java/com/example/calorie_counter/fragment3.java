@@ -29,7 +29,7 @@ public class fragment3 extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
-    private List<itemfrag1> items = new ArrayList<>();
+    private List<itemfrag3> items = new ArrayList<>();
     private String mParam2;
 
     public fragment3() {
@@ -71,7 +71,7 @@ public class fragment3 extends Fragment {
         setInitialData();
         RecyclerView recyclerView = view.findViewById(R.id.search_list);
         // создаем адаптер
-        itemAdapter_frag1 adapter = new itemAdapter_frag1(getContext(), items);
+        itemAdapter_frag3 adapter = new itemAdapter_frag3(getContext(), items);
         // устанавливаем для списка адаптер
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
@@ -80,8 +80,8 @@ public class fragment3 extends Fragment {
         return view;
     }
     private void setInitialData(){
-        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
-        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
+        items.add(new itemfrag3("Задача 1", "34 г", "90",R.drawable.icon1));
+        items.add(new itemfrag3("Задача 1", "34 г", "90",R.drawable.icon1));
+        items.add(new itemfrag3("Задача 1", "34 г", "90",R.drawable.icon1));
 
     }}
