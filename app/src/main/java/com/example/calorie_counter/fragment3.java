@@ -3,12 +3,17 @@ package com.example.calorie_counter;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.SearchView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +29,7 @@ public class fragment3 extends Fragment {
 
     // TODO: Rename and change types of parameters
     private String mParam1;
+    private List<itemfrag1> items = new ArrayList<>();
     private String mParam2;
 
     public fragment3() {
@@ -62,8 +68,20 @@ public class fragment3 extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_fragment3, container, false);
-
+        setInitialData();
+        RecyclerView recyclerView = view.findViewById(R.id.search_list);
+        // создаем адаптер
+        itemAdapter_frag1 adapter = new itemAdapter_frag1(getContext(), items);
+        // устанавливаем для списка адаптер
+        recyclerView.setAdapter(adapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
 
 
         return view;
+    }
+    private void setInitialData(){
+        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
+        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
+        items.add(new itemfrag1("Задача 1", "34 г", "90",R.drawable.icon1));
+
     }}
